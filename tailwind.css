@@ -959,7 +959,7 @@ video {
 @font-face {
   font-family: "proxima-nova";
 
-  src: url(../dist/Proxima\ Nova\ Font.otf);
+  src: url(./Proxima\ Nova\ Font.otf);
 }
 
 .before\:absolute::before {
