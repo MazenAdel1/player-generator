@@ -22,7 +22,7 @@
 
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -42,9 +42,23 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -85,7 +99,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -129,7 +143,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -224,9 +239,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -273,7 +288,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -366,7 +381,8 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -434,7 +450,9 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -621,16 +639,8 @@ video {
   height: 4rem;
 }
 
-.h-48 {
-  height: 12rem;
-}
-
 .h-5 {
   height: 1.25rem;
-}
-
-.h-52 {
-  height: 13rem;
 }
 
 .h-56 {
@@ -645,20 +655,8 @@ video {
   width: 4rem;
 }
 
-.w-48 {
-  width: 12rem;
-}
-
 .w-5 {
   width: 1.25rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-52 {
-  width: 13rem;
 }
 
 .w-56 {
@@ -670,14 +668,18 @@ video {
   width: fit-content;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .appearance-none {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .flex-col {
@@ -700,16 +702,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .self-end {
@@ -852,13 +854,13 @@ video {
 }
 
 .from-purple {
-  --tw-gradient-from: #772D68 var(--tw-gradient-from-position);
+  --tw-gradient-from: #772d68 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(119 45 104 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .to-blue {
-  --tw-gradient-to: #5481A0 var(--tw-gradient-to-position);
+  --tw-gradient-to: #5481a0 var(--tw-gradient-to-position);
 }
 
 .p-2 {
@@ -884,20 +886,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
 }
 
 .pr-0 {
   padding-right: 0px;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .font-proxima {
@@ -918,6 +916,11 @@ video {
   font-weight: 700;
 }
 
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(84 129 160 / var(--tw-text-opacity));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -933,25 +936,47 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blue {
-  --tw-text-opacity: 1;
-  color: rgb(84 129 160 / var(--tw-text-opacity));
-}
-
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-blue {
-  outline-color: #5481A0;
+  outline-color: #5481a0;
 }
 
 .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    backdrop-filter,
+    -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -959,7 +984,7 @@ video {
 @font-face {
   font-family: "proxima-nova";
 
-  src: url(../dist/Proxima\ Nova\ Font.otf);
+  src: url(./Proxima\ Nova\ Font.otf);
 }
 
 .before\:absolute::before {
@@ -1067,27 +1092,27 @@ video {
 }
 
 .before\:content-\[\'\'\]::before {
-  --tw-content: '';
+  --tw-content: "";
   content: var(--tw-content);
 }
 
 .before\:content-\[\'Character_custmization\'\]::before {
-  --tw-content: 'Character custmization';
+  --tw-content: "Character custmization";
   content: var(--tw-content);
 }
 
 .before\:content-\[\'Character_info\'\]::before {
-  --tw-content: 'Character info';
+  --tw-content: "Character info";
   content: var(--tw-content);
 }
 
 .before\:content-\[\'Confirmation\'\]::before {
-  --tw-content: 'Confirmation';
+  --tw-content: "Confirmation";
   content: var(--tw-content);
 }
 
 .before\:content-\[\'OCC_info\'\]::before {
-  --tw-content: 'OCC info';
+  --tw-content: "OCC info";
   content: var(--tw-content);
 }
 
@@ -1163,31 +1188,56 @@ video {
 
 .after\:transition::after {
   content: var(--tw-content);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    backdrop-filter,
+    -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
 .after\:content-\[\'\'\]::after {
-  --tw-content: '';
+  --tw-content: "";
   content: var(--tw-content);
 }
 
 .after\:content-\[\'\(GK-CB-LB-RB-CDM-CM-LM-RM-CF-RW-LW-ST\)\'\]::after {
-  --tw-content: '(GK-CB-LB-RB-CDM-CM-LM-RM-CF-RW-LW-ST)';
+  --tw-content: "(GK-CB-LB-RB-CDM-CM-LM-RM-CF-RW-LW-ST)";
   content: var(--tw-content);
-}
-
-.hover\:bg-light-purple:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 104 169 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-light-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(139 191 226 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-light-purple:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 104 169 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover {
@@ -1215,8 +1265,11 @@ video {
 }
 
 .peer:checked ~ .peer-checked\:drop-shadow-lg {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 640px) {
